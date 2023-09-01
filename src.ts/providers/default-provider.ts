@@ -8,6 +8,7 @@ import { EtherscanProvider } from "./provider-etherscan.js";
 import { InfuraProvider } from "./provider-infura.js";
 //import { PocketProvider } from "./provider-pocket.js";
 import { QuickNodeProvider } from "./provider-quicknode.js";
+import { ChainstackProvider } from "./provider-chainstack.js";
 
 import { FallbackProvider } from "./provider-fallback.js";
 import { JsonRpcProvider } from "./provider-jsonrpc.js";
