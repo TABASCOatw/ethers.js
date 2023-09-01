@@ -87,6 +87,12 @@ export function getDefaultProvider(network: string | Networkish | WebSocketLike,
         } catch (error) { }
     }
 
+    if (allowService("chainstack")) {
+        try {
+            providers.push(new ChainstackProvider(network, options.chainstack));
+        } catch (error) { }
+    }
+
     if (allowService("infura")) {
         try {
             let projectId = options.infura;
